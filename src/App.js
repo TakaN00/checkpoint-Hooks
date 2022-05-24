@@ -7,8 +7,8 @@ import MovieList from './components/MovieList';
 function App() {
   const [rate, setRate] = useState(0)
   const [searching, setSearching] = useState('')
+  
   const getRate =(rating)=>{
-    console.log(rating)
     setRate(rating)
   }
 

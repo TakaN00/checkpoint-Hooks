@@ -38,7 +38,8 @@ const MovieList = (props) => {
 
   return (
     <div className="container">
-        {movieList.filter((el)=>el.rating >= props.rate && el.title.toLocaleLowerCase().includes(props.searching.toLocaleLowerCase())).map( el =>
+        {movieList.filter((el)=>el.rating >= props.rate && el.title.toLocaleLowerCase().includes(props.searching.toLocaleLowerCase()))
+        .map( el =>
           <MovieCard key={el.title} title={el.title} description={el.description} posterURL={el.posterURL} rating={parseInt(el.rating)}/>
         )}
 

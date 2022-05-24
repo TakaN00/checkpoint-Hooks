@@ -1,23 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import ReactStars from "react-rating-stars-component";
 
 const Filter = (props) => {
     const ratingChanged = (newRating) => {
         props.getRate(newRating)
       };  
-
-    // const [search,setSearch]=useState[""]
-
-    // const handleChange = (e) => {setSearch(e.target.value)}
-
-    // const searchChanged = () => {
-    //   props.getSearch(search)
-    // }
-
-    // const wrapper = () => {
-    //   handleChange()
-    //   searchChanged()
-    // }
 
   return (
     <div className='filter'>
