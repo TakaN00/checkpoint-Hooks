@@ -11,7 +11,8 @@ function Add(props) {
     title:"Movie Title", 
     description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     posterURL:"images/movie.jpg",
-    rating:0
+    rating:0,
+    trailer:"https://www.youtube.com/embed/F5AluatK094"
   });
 
   const handleChange = (e) => setMovie({...movie,[e.target.name]:e.target.value})
@@ -29,7 +30,8 @@ function Add(props) {
       title:"Movie Title", 
       description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       posterURL:"images/movie.jpg",
-      rating:0
+      rating:0,
+      trailer:"https://www.youtube.com/embed/F5AluatK094"
     })
   };
 

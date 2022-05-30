@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
+import {Link} from "react-router-dom"
 
 const MovieCard = (props) => {
   return (
     <div className="movie">
+      <Link to={`/${props.title}`} style={{ textDecoration: 'none' }}>
         <img src={props.posterURL} className="poster" alt={props.title}/>
         <div className="movie-details">
             <div className="movie-box">
@@ -22,6 +24,7 @@ const MovieCard = (props) => {
                 {props.description}
             </div>
         </div>
+      </Link>  
     </div>
   )
 }
